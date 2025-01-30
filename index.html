@@ -10,12 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
- <!-- Tailwind CDN  -->
- <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
- <!-- DAISY UI CDN  -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Tailwind CDN  -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- DAISY UI CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- custom css  -->
     <style>
@@ -25,6 +28,7 @@
             font-weight: 400;
             font-style: normal;
         }
+
         /* secondary font  */
         .sora-font {
             font-family: "Sora", serif;
@@ -32,15 +36,57 @@
             font-weight: 400;
             font-style: normal;
         }
+
         /* primary text-color  */
-        .title-color{
+        .title-color {
             color: #111111;
         }
     </style>
 </head>
 
 <body class="adlam-display-font">
- <h1 class="text"></h1>
+    <!-- header section start  -->
+    <header class="bg-[#FFF9F4] h-[100px] flex items-center">
+        <nav class="hidden md:container mx-auto sora-font md:flex items-center justify-between">
+            <!-- logo container  -->
+            <div class="flex items-center justify-start gap-1 title-color">
+                <img src="./c1-assets/logo-header.png" alt="paw image">
+                <h1 class="sora-font text-[26px]">Browse<span class="text-[#ffdc26]">4</span>Pets</h1>
+            </div>
+            <!-- nav menu container  -->
+            <div>
+                <ul class="title-color text-xl flex gap-8 font-normal sora-font">
+                    <li><a href="">Find a pet</a></li>
+                    <li><a href="">Breeds</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <!-- icon-and-button container  -->
+            <div class="flex items-center gap-6">
+                <!-- icon  -->
+                <div class="space-x-2 text-xl">
+                    <span><i class="fa-solid fa-bell"></i></span>
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                <!-- button  -->
+                <div class="flex items-center gap-3">
+                    <!-- button-1  -->
+                    <button
+                        class="btn btn-outline border-[#ffdc26] py-3 px-8 sora-font text-xl hover:bg-[#ffdc26] hover:text-black hover:border-none">Login</button>
+                    <!-- button-2  -->
+                    <button
+                        class="btn bg-[#ffdc26] sora-font py-3 px-8 border-none text-xl hover:bg-[#ffdc26]">Register</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- mobile menu start  -->
+        <nav class="w-full md:hidden flex items-center justify-between px-5">
+            <!-- logo  -->
+            <img src="./c1-assets/logo-header.png" alt="">
+            <!-- icon-hamburger  -->
+            <span><i class="fa-solid fa-bars text-5xl"></i></span> 
+    </header>
 </body>
 
 </html>
