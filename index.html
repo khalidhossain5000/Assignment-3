@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -46,46 +46,62 @@
 
 <body class="adlam-display-font">
     <!-- header section start  -->
-    <header class="bg-[#FFF9F4] h-[100px] flex items-center">
-        <nav class="hidden md:container mx-auto sora-font md:flex items-center justify-between">
-            <!-- logo container  -->
-            <div class="flex items-center justify-start gap-1 title-color">
-                <img src="./c1-assets/logo-header.png" alt="paw image">
-                <h1 class="sora-font text-[26px]">Browse<span class="text-[#ffdc26]">4</span>Pets</h1>
-            </div>
-            <!-- nav menu container  -->
-            <div>
-                <ul class="title-color text-xl flex gap-8 font-normal sora-font">
-                    <li><a href="">Find a pet</a></li>
-                    <li><a href="">Breeds</a></li>
-                    <li><a href="">Contact us</a></li>
-                </ul>
-            </div>
-            <!-- icon-and-button container  -->
-            <div class="flex items-center gap-6">
-                <!-- icon  -->
-                <div class="space-x-2 text-xl">
-                    <span><i class="fa-solid fa-bell"></i></span>
-                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+    <header>
+        <!-- main menu section  -->
+        <section class="bg-[#FFF9F4] h-[100px] flex items-center border-b-[1px] border-[#111111] md:border-b-0">
+            <nav class="hidden md:container mx-auto sora-font md:flex items-center justify-between">
+                <!-- logo container  -->
+                <div class="flex items-center justify-start gap-1 title-color">
+                    <img src="./c1-assets/logo-header.png" alt="paw image">
+                    <h1 class="sora-font text-[26px]">Browse<span class="text-[#ffdc26]">4</span>Pets</h1>
                 </div>
-                <!-- button  -->
-                <div class="flex items-center gap-3">
-                    <!-- button-1  -->
-                    <button
-                        class="btn btn-outline border-[#ffdc26] py-3 px-8 sora-font text-xl hover:bg-[#ffdc26] hover:text-black hover:border-none">Login</button>
-                    <!-- button-2  -->
-                    <button
-                        class="btn bg-[#ffdc26] sora-font py-3 px-8 border-none text-xl hover:bg-[#ffdc26]">Register</button>
+                <!-- nav menu container  -->
+                <div>
+                    <ul class="title-color text-xl flex gap-8 font-normal sora-font">
+                        <li><a href="">Find a pet</a></li>
+                        <li><a href="">Breeds</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
                 </div>
+                <!-- icon-and-button container  -->
+                <div class="flex items-center gap-6">
+                    <!-- icon  -->
+                    <div class="space-x-2 text-xl">
+                        <span><i class="fa-solid fa-bell"></i></span>
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                    <!-- button  -->
+                    <div class="flex items-center gap-3">
+                        <!-- button-1  -->
+                        <button
+                            class="btn btn-outline border-[#ffdc26] py-3 px-8 sora-font text-xl hover:bg-[#ffdc26] hover:text-black hover:border-none">Login</button>
+                        <!-- button-2  -->
+                        <button
+                            class="btn bg-[#ffdc26] sora-font py-3 px-8 border-none text-xl hover:bg-[#ffdc26]">Register</button>
+                    </div>
+                </div>
+            </nav>
+            <!-- mobile menu start  -->
+            <nav class="md:hidden w-full flex items-center justify-between px-5">
+                <!-- logo  -->
+                <img src="./c1-assets/logo-header.png" alt="">
+                <!-- icon-hamburger  -->
+                <span><i class="fa-solid fa-bars text-5xl"></i></span>
+            </nav>
+        </section>
+        <!-- Banner section start  -->
+        <section class="pt-5 md:pt-0 relative md:container mx-auto md:flex items-center justify-between">
+            <!-- banner content-text  -->
+            <div class="md:absolute top-32 w-full md:w-5/12 px-4 md:px-0">
+              <h1 class="title-color text-5xl md:text-[56px]">Pamper Your Pet,  Because They Deserve the Best</h1>
+              <p class="text-xl sora-font md:mt-4 md:mb-8 my-3">Discover a world of treats, toys, and essentials handpicked for your furry friends.Shop now and make tails wag with joy!</p>
+            <button class="btn bg-[#ffdc26] sora-font py-3 px-8 border-none text-xl hover:bg-[#ffdc26]">Find a pet</button>
             </div>
-        </nav>
-
-        <!-- mobile menu start  -->
-        <nav class="w-full md:hidden flex items-center justify-between px-5">
-            <!-- logo  -->
-            <img src="./c1-assets/logo-header.png" alt="">
-            <!-- icon-hamburger  -->
-            <span><i class="fa-solid fa-bars text-5xl"></i></span> 
+            <!-- banner image  -->
+            <div class="md:w-full">
+                <img class="w-full md:w-full" src="./c1-assets/cat-big.png" alt="funny cat image">
+            </div>
+        </section>
     </header>
 </body>
 
